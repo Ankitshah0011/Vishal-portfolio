@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-background text-foreground font-inter overflow-x-hidden;
+  background-image: theme('backgroundImage.grid-pattern');
+}
+
+/* Professional Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #09090B;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272A;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ADFA1D;
+}
+
+/* Linear-style Cards */
+.pro-card {
+  @apply bg-zinc-950 border border-zinc-800 rounded-lg p-6 hover:border-primary/50 transition-all duration-300;
+}
+
+.pro-navbar {
+  @apply fixed top-0 w-full z-50 bg-background/80 backdrop-blur-xl border-b border-zinc-800;
+}
+
+/* Luxury Typography */
+.text-balance {
+  text-wrap: balance;
+}
+
+.text-gradient {
+  @apply bg-gradient-to-br from-white to-zinc-500 bg-clip-text text-transparent;
+}
+
+.text-primary-gradient {
+  @apply bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent;
+}
+
+.section-padding {
+  @apply py-24 px-6 md:px-12 lg:px-32 max-w-7xl mx-auto;
+}
+
+/* Subtle Glow */
+.glow-primary {
+  box-shadow: 0 0 20px rgba(173, 250, 29, 0.1);
+}
+
+/* Loader Styles */
+.loader-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #09090B;
+  z-index: 9999;
+}
