@@ -26,7 +26,7 @@ function App() {
             <div className="max-w-7xl mx-auto flex justify-between items-center">
               <div className="text-xl font-bold tracking-tighter flex items-center gap-2">
                 <div className="w-8 h-8 bg-primary rounded flex items-center justify-center text-black font-black">V</div>
-                <span className="hidden sm:inline font-outfit uppercase tracking-widest text-sm">Vishal Prasad</span>
+                <span className="font-outfit uppercase tracking-widest text-sm">Vishal Prasad</span>
               </div>
 
               {/* Desktop Nav */}
